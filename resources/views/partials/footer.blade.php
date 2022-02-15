@@ -20,5 +20,6 @@
 
 <script>
     baseUrl = '{{url('/')}}';
+    propertiesEndpoint = baseUrl + '/api/properties';
 </script>
 <script src="{{ asset('js/app.js') }}"></script>

@@ -68,7 +68,6 @@ export default {
             filter: '',
             perPage: 6,
             loading: true,
-            endpoint: 'api/properties',
             response: {
                 data: [],
             },
@@ -95,7 +94,7 @@ export default {
                     queryString = '?' + queryParameters.join('&')
                 }
 
-                url = this.endpoint + queryString;
+                url = propertiesEndpoint + queryString;
             }
 
             fetch(url)

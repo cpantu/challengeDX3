@@ -19278,7 +19278,6 @@ __webpack_require__.r(__webpack_exports__);
       filter: '',
       perPage: 6,
       loading: true,
-      endpoint: 'api/properties',
       response: {
         data: []
       }
@@ -19306,7 +19305,7 @@ __webpack_require__.r(__webpack_exports__);
           queryString = '?' + queryParameters.join('&');
         }
 
-        url = this.endpoint + queryString;
+        url = propertiesEndpoint + queryString;
       }
 
       fetch(url).then(function (response) {
@@ -19350,8 +19349,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       property: {},
-      loading: true,
-      endpoint: baseUrl + '/api/properties'
+      loading: true
     };
   },
   mounted: function mounted() {
@@ -19361,7 +19359,7 @@ __webpack_require__.r(__webpack_exports__);
     getProperty: function getProperty() {
       var _this = this;
 
-      fetch(this.endpoint + '?name=' + this.id).then(function (response) {
+      fetch(propertiesEndpoint + '?name=' + this.id).then(function (response) {
         _this.loading = false;
 
         if (!response.ok) {

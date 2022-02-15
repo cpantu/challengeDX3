@@ -1,6 +1,6 @@
 ## Prueba técnica para DX3 por César Pantuso
 
-Consiga en el directorio raíz del repositorio con el nombre Prueba técnica - Fullstack_.pdf
+Consiga en el directorio raíz del repositorio con el nombre `Prueba técnica - Fullstack_.pdf`
 
 
 ###Requisitos

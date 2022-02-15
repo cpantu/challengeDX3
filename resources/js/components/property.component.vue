@@ -40,7 +40,6 @@ export default {
         return {
             property: {},
             loading: true,
-            endpoint: baseUrl + '/api/properties',
         }
     },
     mounted() {
@@ -48,7 +47,7 @@ export default {
     },
     methods:  {
         getProperty() {
-            fetch(this.endpoint + '?name=' + this.id)
+            fetch(propertiesEndpoint + '?name=' + this.id)
                 .then(response => {
                     this.loading = false;
                     if (!response.ok) {
